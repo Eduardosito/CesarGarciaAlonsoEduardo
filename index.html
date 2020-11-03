@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado Cesar</title>
+</head>
+
+<style type="text/css">
+  .boton_1{
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: helvetica;
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+    color: black;
+    background-color: #67FCCF;
+    border-radius: 15px;
+    border: 3px double #006505;
+  }
+  .boton_1:hover{
+    opacity: 0.6;
+    text-decoration: none;
+  }
+  .prin{
+    background-color:#67FCCF;
+    height: 100%;
+    width: 80%;
+  }
+  .sec{
+    background-color:#67FCCF;
+    height: 1080px ;
+    width: 1920px ;
+  }
+  h1 {
+  color: #6c2eb9;
+  font-weight: normal;
+  font-size: 40px;
+  font-family: Arial;
+  text-transform: uppercase;
+}
+p{
+        color: #6c2eb9;
+  font-weight: normal;
+  font-size: 15px;
+  font-family: Arial;
+  text-transform: uppercase;   
+}
+</style>
+
+<body>
+    <div align="center" class="sec">   
+    <div id="main" align="center" class="prin">   <br>
+    <h1>Cifrado tipo Cesar</h1><br><br>
+
+    <p>Ingreasa lo que vas a cifrar / descifrar</p>
+    <textarea id="cadena" ></textarea><br>
+
+    <p>Ingresa el numero de saltos para tu cifrado</p>
+    <textarea id="salto" ></textarea>
+
+
+    <p> <input type="button" class="boton_1" value="Cifrar" onclick="codificar()" >
+        <input type="button" class="boton_1" value="Decifrar" onclick="decodificar()" > </p>
+    <br><br>
+    <div id="resultado" class="res" align="center"> </div>
+        <br><br><br>
+
+            <h1>Cifrado tipo Cesar Mejorado</h1><br><br>
+            
+            <p>Ingreasa lo que vas a cifrar / descifrar</p>
+            <textarea id="cadena2" ></textarea><br>   
+
+            <p>Ingresa t valor independiente</p>
+            <textarea id="salto2" ></textarea>  
+
+            <p> <input type="button" class="boton_1" value="Cifrar" onclick="codificar2()" >
+                <input type="button" class="boton_1" value="Decifrar" onclick="decodificar2()" > </p>  
+
+            <div id="resultado2" align="center"> hola</div>
+    <script src="js/logica.js" ></script>
+
+    </div>
+    </div>
+</body>
+</html>
